@@ -1,0 +1,63 @@
+1.Скрипт создания папок.
+echo off
+rem create new catalog
+md agafonov
+rem go to into new catalog
+cd agafonov
+md maxim
+cd maxim
+md agafonov
+rem this need for pause of programm
+pause
+
+2.Скрипт создания файлов в папках
+echo off
+rem create new catalog
+cd agafonov
+echo >01101999.txt
+md valerich
+cd valerich
+echo >dns.txt
+rem this need for pause of programm
+pause
+3. Скрипт удаления файлов 
+echo off
+del agafonov /S/Q/F
+pause
+4. Скрипт удаления папок 
+echo off
+cd agafonov
+cd nikita
+rd agafonov
+cd ..
+rd nikita
+rd valerich
+cd ..
+rd agafonov
+5.Объединенный скрипт.
+echo off
+md Agafonov
+cd Agafonov
+md Nikita
+cd Nikita
+md Valerich
+cd ..
+pause
+echo> 01101999.txt
+cd Nikita
+cd Valerich
+echo> dns.txt
+cd ..
+cd ..
+cd ..
+pause
+del Agafonov /S/Q/F
+pause
+cd Agafonov
+cd Nikita
+rd Valerich
+cd ..
+rd Nikita
+cd ..
+rd Agafonov
+pause
